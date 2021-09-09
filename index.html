@@ -229,7 +229,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper  focus' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://i.loli.net/2020/05/04/ixQsL6T73meN5EY.jpg"></div>
           
@@ -309,18 +309,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 初步诊断进一步询问了一下其他设备访问网络的情况，报告是一切畅通。有理由认为是IP配置出了一点问题，不过保险起见还是先用自带的疑难解答诊断下。
-
-
-不出所料是IP问题，直接让他去对应页面调整。
-
-
-手动配置结果啥也不填可还行，果断让...
+&lt;img src=”https://i.loli.net/2021/09/04/5...
       
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
+    <div class='meta-v3' line_style='dashed'>
       <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://i.loli.net/2020/05/04/4BFpbXYyMeT9aKU.png'></a>
         
         <time>2021-09-04</time>
         
@@ -370,8 +368,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
+    <div class='meta-v3' line_style='dashed'>
       <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://i.loli.net/2020/05/04/4BFpbXYyMeT9aKU.png'></a>
         
         <time>2020-06-07</time>
         
@@ -419,8 +420,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
+    <div class='meta-v3' line_style='dashed'>
       <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://i.loli.net/2020/05/04/4BFpbXYyMeT9aKU.png'></a>
         
         <time>2020-05-04</time>
         
@@ -865,55 +869,6 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 
-
-
-  
-  
-<script src="/js/valine.js"></script>
-
-
-<script>
-  function emoji(path, idx, ext) {
-    return path + "/" + path + "-" + idx + "." + ext;
-  }
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-  function pjax_valine() {
-    if(!document.querySelectorAll("#valine_container")[0])return;
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
-    let path = pdata.commentPath;
-    if (path.length == 0) {
-      let defaultPath = '';
-      path = defaultPath || decodeURI(window.location.pathname);
-    }
-    var valine = new Valine();
-    valine.init(Object.assign({"path":null,"placeholder":"快来评论吧~","appId":null,"appKey":null,"meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
-      el: '#valine_container',
-      path: path,
-      placeholder: pagePlaceholder,
-      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps,
-    }))
-  }
-  $(function () {
-    pjax_valine();
-  });
-  volantis.pjax.push(pjax_valine);
-</script>
 
 
 

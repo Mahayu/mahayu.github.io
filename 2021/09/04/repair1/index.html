@@ -223,7 +223,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper post dock' style="display: none;">
+        <div id="full" class='cover-wrapper post focus' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://i.loli.net/2020/05/04/ixQsL6T73meN5EY.jpg"></div>
           
@@ -330,34 +330,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><a href="#%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5">一些碎碎念</a></li>
 </ul>
 <h1 id="接到问题"><a href="#接到问题" class="headerlink" title="接到问题"></a>接到问题</h1><p>属于是网络相关。经典无线网络显示叉号，无法联网。</p>
-<img src="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="200" align = "middle">
+<img src="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width = "200"/>
 
 <h1 id="初步诊断"><a href="#初步诊断" class="headerlink" title="初步诊断"></a>初步诊断</h1><p>进一步询问了一下其他设备访问网络的情况，报告是一切畅通。有理由认为是IP配置出了一点问题，不过保险起见还是先用自带的疑难解答诊断下。</p>
-<img src="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="400" align = "middle">
-
+<p>&lt;img src=”<a target="_blank" rel="noopener" href="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png">https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png</a> width = “200”/&gt;</p>
 <p>不出所料是IP问题，直接让他去对应页面调整。</p>
-<img src="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300" align = "middle">
+<img src="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width= "300"/>
 
 <p>手动配置结果啥也不填可还行，果断让他选择自动获得、然后给了一个<code>114.114.114.114</code>的DNS。</p>
 <h1 id="深入问题"><a href="#深入问题" class="headerlink" title="深入问题"></a>深入问题</h1><p>确认了之后仍然报告无法联网。尝试查询网络的具体状态：</p>
-<img src="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300" align = "middle">
+<img src="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
 <p><code>169.254.*</code>，分配了保留地址。考虑到手机能够正常上网……归根到底是本机的DHCP服务出了点问题，方便起见直接配置一个静态IP完事。</p>
 <p>首先要拿到网段，找一个正常运作的终端查询一下IP地址就行了。这里利用的是对方的手机：</p>
-<img src="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300" align = "middle">
+<img src="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
 <p>行，应该是<code>192.168.0.*</code> 、手动配置IP和网关即可。</p>
 <blockquote>
 <p> IP地址给的是192.168.0.12，网关反正是192.168.0.1。</p>
 </blockquote>
 <h1 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h1><p>确认以后就没有显示问号了，结果还是不能正常的浏览网页。尝试<code>ping</code>了一下DNS：</p>
-<img src="https://i.loli.net/2021/09/04/tf6RMaITGxuAwPJ.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/tf6RMaITGxuAwPJ.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300" align = "middle">
+<img src="https://i.loli.net/2021/09/04/tf6RMaITGxuAwPJ.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/tf6RMaITGxuAwPJ.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
 <p>显然是连接上网了，但是DNS查询失败……显然DNS服务器不太可能宕机，那看来是Winsock出了点问题。</p>
 <p>执行命令</p>
 <p><code>netsh winsock reset</code></p>
 <p>即可。</p>
-<img src="https://i.loli.net/2021/09/04/sXY5urJma9CVQ8l.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/sXY5urJma9CVQ8l.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300" align = "middle">
+<img src="https://i.loli.net/2021/09/04/sXY5urJma9CVQ8l.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/sXY5urJma9CVQ8l.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
 <p>要注意的是这里不需要重启即可观察修改效果。</p>
 <p>可以查询到域名对应的IP地址了，那浏览也不成问题。</p>
@@ -382,10 +381,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-04T09:23:16+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-05T00:19:01+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 4, 2021</p>
+    <p>更新于：Sep 5, 2021</p>
   </a>
 </div>
 
@@ -456,14 +455,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
-    
-    <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-  </article>
+  
 
 
 
@@ -813,55 +805,6 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 
-
-
-  
-  
-<script src="/js/valine.js"></script>
-
-
-<script>
-  function emoji(path, idx, ext) {
-    return path + "/" + path + "-" + idx + "." + ext;
-  }
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-  function pjax_valine() {
-    if(!document.querySelectorAll("#valine_container")[0])return;
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
-    let path = pdata.commentPath;
-    if (path.length == 0) {
-      let defaultPath = '';
-      path = defaultPath || decodeURI(window.location.pathname);
-    }
-    var valine = new Valine();
-    valine.init(Object.assign({"path":null,"placeholder":"快来评论吧~","appId":null,"appKey":null,"meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
-      el: '#valine_container',
-      path: path,
-      placeholder: pagePlaceholder,
-      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps,
-    }))
-  }
-  $(function () {
-    pjax_valine();
-  });
-  volantis.pjax.push(pjax_valine);
-</script>
 
 
 
