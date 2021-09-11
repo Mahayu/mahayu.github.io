@@ -333,7 +333,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <img src="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/mOhpGqlJXte8d9L.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width = "200"/>
 
 <h1 id="初步诊断"><a href="#初步诊断" class="headerlink" title="初步诊断"></a>初步诊断</h1><p>进一步询问了一下其他设备访问网络的情况，报告是一切畅通。有理由认为是IP配置出了一点问题，不过保险起见还是先用自带的疑难解答诊断下。</p>
-<p>&lt;img src=”<a target="_blank" rel="noopener" href="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png">https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png</a> width = “200”/&gt;</p>
+<img src="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/5Yo18QrZIiLRvG6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width= "300"/>
+
 <p>不出所料是IP问题，直接让他去对应页面调整。</p>
 <img src="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/V6YaSdruhP1qbE2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width= "300"/>
 
@@ -341,8 +342,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h1 id="深入问题"><a href="#深入问题" class="headerlink" title="深入问题"></a>深入问题</h1><p>确认了之后仍然报告无法联网。尝试查询网络的具体状态：</p>
 <img src="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/1qX8CMOk4Bgdi5t.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
-<p><code>169.254.*</code>，分配了保留地址。考虑到手机能够正常上网……归根到底是本机的DHCP服务出了点问题，方便起见直接配置一个静态IP完事。</p>
-<p>首先要拿到网段，找一个正常运作的终端查询一下IP地址就行了。这里利用的是对方的手机：</p>
+<p><code>169.254.*</code>，分配了保留地址。考虑到手机能够正常上网……归根到底是本机的DHCP服务出了点问题，方便起见直接配置个静态IP完事。</p>
+<p>首先要拿到网段，找一个正常运作的终端<br>查询一下IP地址就行了。这里利用的是对方的手机：</p>
 <img src="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" class="lazyload" data-srcset="https://i.loli.net/2021/09/04/Pfb4kOXQNtwp2ME.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="300"/>
 
 <p>行，应该是<code>192.168.0.*</code> 、手动配置IP和网关即可。</p>
@@ -381,10 +382,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-05T00:19:01+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-11T08:00:11+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 5, 2021</p>
+    <p>更新于：Sep 11, 2021</p>
   </a>
 </div>
 
