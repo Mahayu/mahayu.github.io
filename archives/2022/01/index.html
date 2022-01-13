@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -22,7 +24,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>较为极限情形下的nVIDIA MX系显卡表现（以原神为例） - 间歇泉下</title>
+  <title>Archive: 2022/1 - 间歇泉下</title>
   
 
   
@@ -79,13 +81,15 @@
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
       </ul>
     </div>
@@ -200,7 +204,7 @@
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper post focus' style="display: none;">
+        <div id="half" class='cover-wrapper  focus' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://i.loli.net/2020/05/04/ixQsL6T73meN5EY.jpg"></div>
           
@@ -233,263 +237,169 @@
         <div class="body-wrapper" id="pjax-container">
           
 
-<div class='l_main no_sidebar'>
-  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+<div class='l_main'>
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
   
-
-
   
-  <div class="article-meta" id="top">
+  
+  
     
-    
-    
-      <h1 class="title">
+    <h2 class="article-title" >
+      <a href="/2022/01/04/game_data1/">
         较为极限情形下的nVIDIA MX系显卡表现（以原神为例）
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://i.loli.net/2020/05/04/4BFpbXYyMeT9aKU.png">
-    <p>Mahayu</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 4, 2022</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
       
-      <div id="lc-pv" data-title="较为极限情形下的nVIDIA MX系显卡表现（以原神为例）" data-path="/2022/05/04/game_data1/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
+        Disclaimer
+正文之前，笔者认为有必要声明：确实有很多理由可以对被测试的游戏亦或是相关群体进行批评，但是这和本文及本文作者毫无关系。如果读者对这些内容感兴趣，大可移驾别处。
+
+前言
+环境设置
+测试用例
+具体表现
+引导阶段&amp;周边游览
+野外小规模战斗
+副本两则
+风起地大树夜景
+
+
+数据分析
+总结
+
+前言一个显而易见的事实是：在一般价位段上，搭载独显的机型总比纯核显（下称UMA机器...
+      
+    
   </div>
-
-
+  
+    <div class='meta-v3' line_style='dashed'>
+      <div>
+        
           
+          <a class='avatar' href='/'><img src='https://i.loli.net/2020/05/04/4BFpbXYyMeT9aKU.png'></a>
+        
+        <time>2022-01-04</time>
         
       </div>
-    
-  </div>
-
-
-  
-  
-  <p><strong>Disclaimer</strong></p>
-<p>正文之前，笔者认为有必要声明：确实有很多理由可以对被测试的游戏亦或是相关群体进行批评，但是这和本文及本文作者毫无关系。如果读者对这些内容感兴趣，大可移驾别处。</p>
-<ul>
-<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
-<li><a href="#%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE">环境设置</a></li>
-<li><a href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">测试用例</a></li>
-<li><a href="#%E5%85%B7%E4%BD%93%E8%A1%A8%E7%8E%B0">具体表现</a><ul>
-<li><a href="#%E5%BC%95%E5%AF%BC%E9%98%B6%E6%AE%B5%E5%91%A8%E8%BE%B9%E6%B8%B8%E8%A7%88">引导阶段&amp;周边游览</a></li>
-<li><a href="#%E9%87%8E%E5%A4%96%E5%B0%8F%E8%A7%84%E6%A8%A1%E6%88%98%E6%96%97">野外小规模战斗</a></li>
-<li><a href="#%E5%89%AF%E6%9C%AC%E4%B8%A4%E5%88%99">副本两则</a></li>
-<li><a href="#%E9%A3%8E%E8%B5%B7%E5%9C%B0%E5%A4%A7%E6%A0%91%E5%A4%9C%E6%99%AF">风起地大树夜景</a></li>
-</ul>
-</li>
-<li><a href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a></li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
-</ul>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一个显而易见的事实是：在一般价位段上，搭载独显的机型总比纯核显（下称UMA机器）畅销。个中原因已有很多文章解析，此处不再赘述。</p>
-<p>显然这些搭载独显的机器的性能释放不会太过理想。在应对游戏时压力尤甚。</p>
-<p>本文将以性能释放较保守的 惠普 战66 四代 (ProBook 440 G8)为例，探讨在较为严格的限制下、MX450显卡运行《原神》时的性能表现。</p>
-<h1 id="环境设置"><a href="#环境设置" class="headerlink" title="环境设置"></a>环境设置</h1><p>测试机核心配置为</p>
-<pre><code>HP ProBook 440 G8
-    i5-1135G7/MX450 GDDR5 2G（12W）
-    16GiB RAM/512G SSD
-    Windows 10 1903
-室温23℃
-</code></pre>
-<p>测试软件为HwInfo_715_4620，配合Fraps以抓取实时帧率。</p>
-<p>游戏默认图像质量为“低”，手动修改帧率上线为60帧数。修改后结果如下图所示。</p>
-<img src="https://s2.loli.net/2022/01/14/8IkiZHbEJl2YCXP.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/8IkiZHbEJl2YCXP.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-
-
-<h1 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h1><p>时间所限，测试用例仅包含以下几项：</p>
-<ul>
-<li>游戏开始时的引导阶段/蒙德城周边游览</li>
-<li>野外小规模战斗</li>
-<li>副本两则</li>
-<li>风起地大树夜景</li>
-</ul>
-<h1 id="具体表现"><a href="#具体表现" class="headerlink" title="具体表现"></a>具体表现</h1><p>以折线图的形式表现时间与帧率、CPU功耗\GPU Core(NVDDD)Output Power的关系。</p>
-<h2 id="引导阶段-amp-周边游览"><a href="#引导阶段-amp-周边游览" class="headerlink" title="引导阶段&amp;周边游览"></a>引导阶段&amp;周边游览</h2><div align = center>
-<img src="https://s2.loli.net/2022/01/14/afBiWbZ7PkFY2o8.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/afBiWbZ7PkFY2o8.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" height = "200" width = "500"/>
-</div>
-
-<h2 id="野外小规模战斗"><a href="#野外小规模战斗" class="headerlink" title="野外小规模战斗"></a>野外小规模战斗</h2><div align = center>
-<img src="https://s2.loli.net/2022/01/14/zhosNTVa5piBlA4.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/zhosNTVa5piBlA4.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" height = "200" width = "500"/>
-</div>
-
-<h2 id="副本两则"><a href="#副本两则" class="headerlink" title="副本两则"></a>副本两则</h2><div align = center>
-<img src="https://s2.loli.net/2022/01/14/4JcUt7Wpxf6woQH.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/4JcUt7Wpxf6woQH.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" height = "200" width = "500"/>
-</div>
-<div align = center>
-<img src="https://s2.loli.net/2022/01/14/ofzv2PqxtOWCTVb.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/ofzv2PqxtOWCTVb.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" height = "200" width = "500"/>
-</div>
-
-<h2 id="风起地大树夜景"><a href="#风起地大树夜景" class="headerlink" title="风起地大树夜景"></a>风起地大树夜景</h2><div align = center>
-<img src="https://s2.loli.net/2022/01/14/QI3ya9FN76GcZ5u.png" class="lazyload" data-srcset="https://s2.loli.net/2022/01/14/QI3ya9FN76GcZ5u.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" height = "200" width = "500" >
-</div>
-
-<h1 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h1><ul>
-<li><p>引导阶段&amp;周边游览</p>
-<p>帧率能保持在60帧左右。要注意到的是相对于双烤成绩，CPU功耗总是保持在一个较高的水平，而GPU功耗则根据画面的复杂度不同而波动。</p>
-</li>
-<li><p>野外小规模战斗</p>
-<p>由于流程较短、场景简单，整体帧率没有较大的波动。其中GPU功耗有一个尖峰，应当是视光特效堆积所造成的。在后文会详细分析。</p>
-</li>
-<li><p>副本两则</p>
-<p>副本分为解谜和战斗两部分。</p>
-<p>解谜环节的帧率几乎没有波动，同时GPU功耗比大世界下游览的功耗要显著低，符合一般性逻辑（场景相对较简单）。CPU功耗仍然维持在一个较高水平。</p>
-<p>战斗部分出现了较严重的掉帧现象。</p>
-<p>副本1当中可以观察到帧数下降沿发生时，GPU功耗并没有上拉的迹象、而CPU功耗有对应的尖峰。推测<strong>并非</strong>是视光特效堆积造成的效果。</p>
-<p>副本2中掉帧下降沿发生时有显著的GPU功耗上升，可判定为视光特效过多所造成的。</p>
-<p>注意到两个副本中帧数下降沿发生时，CPU功耗都有尖峰。具体原因限于本人知识所限，无法给出对应的解答。</p>
-</li>
-<li><p>风起地大树夜景</p>
-<p>帧率呈凹字形，相应的GPU功耗呈凸字形——显然是因为远景渲染过程所导致的，符合一般性逻辑。</p>
-</li>
-</ul>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>除开一些战斗场景的掉帧外，这块相对低功耗的MX450表现还是出乎笔者意料的。即使是比较耗费资源的远景观测，在渲染完毕之后的帧数也非常理想。</p>
-<p>理论上来说战66这款机器的性能释放在同等定位产品中应当属于较差的（双烤15W+20W）；既然极端情况下的效果尚可，那一般情况下的MX450……甚至是下一代iGPU的表现只会更好。诸如Thinkbook14这样强调性能释放的UMA机器或许会获得更大的优势。</p>
-<p>属于UMA的时代终将到来。</p>
-
-  
-  
-    
-    <div class='footer'>
       
-      
-      
+        <div>
+          <a class='readmore' href='/2022/01/04/game_data1/'>
+            Read More
+          </a>
+        </div>
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-01-14T05:53:36+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jan 14, 2022</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mahayu.github.io/2022/05/04/game_data1/&title=较为极限情形下的nVIDIA MX系显卡表现（以原神为例） - 间歇泉下&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-  </div>
-
-
+  </section>
   
-  
-
-  
-    <div class="prev-next">
-      
-      
-        <a class='next' href='/2021/09/04/repair1/'>
-          <p class='title'>云修理#1<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>应该算是开新坑……那么就直接开始。
-屏摄预警
-
-接到问题
-初步诊断
-深入问题
-解决问题
-一些碎碎念
-
-接到问题属于是网络相关。经典无线网络显示叉号，无法联网。
-
-
-初步诊断进一步询问了一下其他设...</p>
-        </a>
-      
-    </div>
-  
-</article>
-
-
-  
-
+    
   
 
 
-
-
-
-
+	
 </div>
 <aside class='l_side'>
   
+  
+    
+    
+
+  
+
+  
+    
+    
+
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/'>
+          <img no-lazy src='https://i.loli.net/2021/09/04/vVPGDYeNzZnhrW8.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+          <p>Time to dive into fireworks.</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:2531696275@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/Mahayu/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
 
 </aside>
-
 
 
 		  
@@ -498,21 +408,21 @@
 
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="较为极限情形下的nVIDIA MX系显卡表现（以原神为例）";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.add("show");
+  l_header.classList.remove("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="none";
-    cover_wrapper.style.display="none";
+    cover_wrapper.id="half";
+    cover_wrapper.style.display="";
     
   
 </script>
@@ -545,14 +455,14 @@
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.3.1" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
